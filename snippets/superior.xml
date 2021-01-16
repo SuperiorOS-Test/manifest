@@ -13,6 +13,10 @@
            fetch="https://github.com/SuperiorOS-Devices"
            revision="refs/heads/eleven" />
 
+  <remote name="beta"
+          fetch="https://github.com/SuperiorOS-Test/"
+          revision="refs/heads/eleven" />
+  
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
   
@@ -55,7 +59,7 @@
 
   <!-- Frameworks Repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="superior" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="superior" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="beta" />
   <project path="frameworks/native" name="android_frameworks_native" remote="superior" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="superior" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="superior" />
@@ -70,9 +74,9 @@
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="superior" />
   <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="superior" />
   <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="superior" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="superior" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="beta" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="superior" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="superior" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="beta" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="superior" />
   <project path="packages/apps/SuperiorSettings" name="android_packages_apps_SuperiorSettings" remote="superior" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="superior" />
@@ -111,6 +115,6 @@
   <project path="vendor/superior" name="android_vendor_superior" remote="superior" />
 
   <!-- Manifest -->
-  <project path="manifest" name="manifest" remote="superior" />
+  <project path="manifest" name="manifest" remote="beta" />
 
 </manifest>
